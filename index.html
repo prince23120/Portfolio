@@ -65,7 +65,7 @@
               <div class="hero-actions">
                 <a class="button button-primary" href="#projects">Hire Me</a>
                 <a class="button button-secondary" href="./assets/Prince-Bansal-CV.pdf" download="Prince-Bansal-CV.pdf">Download CV</a>
-                <a class="button button-secondary" href="#contact">Let's Talk</a>
+                <a class="button button-secondary" href="./assets/Prince-Bansal-CV.pdf" target="_blank">View CV</a>
               </div>
               <div class="hero-socials">
                 <a href="https://github.com/prince23120" target="_blank" rel="noreferrer">GitHub</a>
@@ -522,35 +522,72 @@
         <section class="section contact-section" id="contact">
           <div class="section-heading reveal">
             <p class="eyebrow">Contact</p>
-            <h2>Let’s build something useful together.</h2>
+            <h2>Let’s connect and build something useful together.</h2>
           </div>
 
           <div class="contact-cta reveal">
             <div class="contact-cta-copy">
-              <p class="contact-intro">Open to internships, collaborative builds, and development work where I can contribute and grow fast.</p>
+              <p class="contact-intro">
+                Open to internships, freelance work, and collaborative projects. If you have an idea, opportunity, or
+                role in mind, I’d be glad to connect.
+              </p>
+              <div class="contact-note">
+                <span class="contact-note-title">Best way to reach me</span>
+                <p>Email is the fastest option, and I usually reply with the next steps clearly.</p>
+              </div>
               <div class="contact-actions">
-                <a class="button button-primary" href="mailto:princebansal2312@gmail.com">Email Me</a>
+                <a class="button button-primary" href="mailto:princebansal2312@gmail.com">Send Email</a>
                 <a class="button button-secondary" href="./assets/Prince-Bansal-CV.pdf" download="Prince-Bansal-CV.pdf">Download CV</a>
               </div>
             </div>
 
-            <div class="contact-grid">
-              <a class="contact-card" href="mailto:princebansal2312@gmail.com">
-                <span class="contact-label">Email</span>
-                <strong>princebansal2312@gmail.com</strong>
-              </a>
-              <a class="contact-card" href="https://github.com/prince23120" target="_blank" rel="noreferrer">
-                <span class="contact-label">GitHub</span>
-                <strong>github.com/prince23120</strong>
-              </a>
-              <a class="contact-card" href="https://www.linkedin.com/in/princebansal" target="_blank" rel="noreferrer">
-                <span class="contact-label">LinkedIn</span>
-                <strong>linkedin.com/in/princebansal</strong>
-              </a>
-              <a class="contact-card" href="tel:+916284689022">
-                <span class="contact-label">Mobile</span>
-                <strong>+91 62846 89022</strong>
-              </a>
+            <div class="contact-panel">
+              <form class="contact-form" id="contact-form">
+                <div class="form-grid">
+                  <label class="form-field">
+                    <span>Name</span>
+                    <input type="text" name="name" placeholder="Your name" required />
+                  </label>
+                  <label class="form-field">
+                    <span>Email</span>
+                    <input type="email" name="email" placeholder="you@example.com" required />
+                  </label>
+                </div>
+
+                <label class="form-field">
+                  <span>Subject</span>
+                  <input type="text" name="subject" placeholder="Project, internship, or collaboration" required />
+                </label>
+
+                <label class="form-field">
+                  <span>Message</span>
+                  <textarea name="message" rows="5" placeholder="Tell me a little about what you have in mind." required></textarea>
+                </label>
+
+                <div class="contact-form-actions">
+                  <button class="button button-primary" type="submit">Send Message</button>
+                  <p class="contact-form-note">This will open your email app with the message ready to send.</p>
+                </div>
+              </form>
+
+              <div class="contact-grid">
+                <a class="contact-card" href="mailto:princebansal2312@gmail.com">
+                  <span class="contact-label">Email Me</span>
+                  <strong>princebansal2312@gmail.com</strong>
+                </a>
+                <a class="contact-card" href="https://github.com/prince23120" target="_blank" rel="noreferrer">
+                  <span class="contact-label">View GitHub</span>
+                  <strong>github.com/prince23120</strong>
+                </a>
+                <a class="contact-card" href="https://www.linkedin.com/in/princebansal" target="_blank" rel="noreferrer">
+                  <span class="contact-label">Connect on LinkedIn</span>
+                  <strong>linkedin.com/in/princebansal</strong>
+                </a>
+                <a class="contact-card" href="tel:+916284689022">
+                  <span class="contact-label">Call Me</span>
+                  <strong>+91 62846 89022</strong>
+                </a>
+              </div>
             </div>
           </div>
         </section>

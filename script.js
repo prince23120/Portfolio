@@ -14,6 +14,7 @@ const certificateNext = document.querySelector('.certificate-next');
 const scrollProgressBar = document.querySelector('.scroll-progress-bar');
 const ambientOne = document.querySelector('.ambient-one');
 const ambientTwo = document.querySelector('.ambient-two');
+const contactForm = document.querySelector('#contact-form');
 const root = document.documentElement;
 const storedTheme = localStorage.getItem('portfolio-theme');
 const prefersLight = window.matchMedia('(prefers-color-scheme: light)').matches;
@@ -167,4 +168,26 @@ if (certificateTrack && certificateCards.length) {
 
   updateCertificateSlider(0);
   startAutoSlide();
+}
+
+if (contactForm) {
+  contactForm.addEventListener('submit', (event) => {
+    event.preventDefault();
+
+    const formData = new FormData(contactForm);
+    const name = (formData.get('name') || '').toString().trim();
+    const email = (formData.get('email') || '').toString().trim();
+    const subject = (formData.get('subject') || '').toString().trim();
+    const message = (formData.get('message') || '').toString().trim();
+
+    const body = [
+      `Name: ${name}`,
+      `Email: ${email}`,
+      '',
+      message,
+    ].join('\n');
+
+    const mailtoUrl = `mailto:princebansal2312@gmail.com?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
+    window.location.href = mailtoUrl;
+  });
 }
